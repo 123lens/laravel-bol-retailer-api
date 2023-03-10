@@ -47,7 +47,7 @@ $ composer test
 ```
 
 ## Versioning
-We aim to keep versions the same as the wrapped package.
+We aim to keep main versions the same as the wrapped package.
 
 ## Credits
 
