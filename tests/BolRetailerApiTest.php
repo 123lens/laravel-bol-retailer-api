@@ -30,7 +30,7 @@ class BolRetailerApiTest extends TestCase
     }
 
     /** @test */
-    public function returnsCorrectEndpoints()
+    public function returnsCorrectEndpoints(): void
     {
         $service = app('Bol');
         $this->assertInstanceOf(Commissions::class, $service->commission());
