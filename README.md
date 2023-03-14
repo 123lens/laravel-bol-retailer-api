@@ -35,7 +35,7 @@ php artisan vendor:publish --provider="Budgetlens\Budgetlens\LaravelBolRetailerA
 
 ## Get Offer
 ```php
-    $offer = Bol::offers->get($id);
+    $offer = Bol::offers()->get($id);
     ddd($offer);
 ```
 
