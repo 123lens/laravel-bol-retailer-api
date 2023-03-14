@@ -30,7 +30,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('Bol', function () {
-            return new Client(new ApiConfig());
+            return new WrapperClient(new ApiConfig());
         });
     }
 }
