@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [8.0.1] - 2023-03-24
+
 ### Changes
 - Added correct api for `status()`
 
@@ -14,5 +16,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial release
 
-
 [8.0.0]: https://github.com/123lens/laravel-bol-retailer-api/releases/tag/v8.0.0
+[8.0.1]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.0.0...v8.0.1
