@@ -3,6 +3,7 @@
 namespace Budgetlens\LaravelBolRetailerApi;
 
 use Budgetlens\BolRetailerApi\Client;
+use Budgetlens\BolRetailerApi\Contracts\Config;
 use Budgetlens\BolRetailerApi\Endpoints\Commissions;
 use Budgetlens\BolRetailerApi\Endpoints\Inbounds;
 use Budgetlens\BolRetailerApi\Endpoints\Insights;
@@ -18,81 +19,93 @@ use Budgetlens\BolRetailerApi\Endpoints\Shipments;
 use Budgetlens\BolRetailerApi\Endpoints\Shipping;
 use Budgetlens\BolRetailerApi\Endpoints\Subscriptions;
 use Budgetlens\BolRetailerApi\Endpoints\Transports;
+use Budgetlens\BolRetailerApi\SharedClient;
 
-class WrapperClient extends Client
+class WrapperClient
 {
+    private $config;
+    private $retailerApi;
+    private $sharedApi;
+
+    public function __construct(?Config $config = null)
+    {
+        $this->config = $config;
+        $this->retailerApi = new Client($config);
+        $this->sharedApi = new SharedClient($config);
+    }
+
     public function commission(): Commissions
     {
-        return $this->commission;
+        return $this->retailerApi->commission;
     }
 
     public function insights(): Insights
     {
-        return $this->insights;
+        return $this->retailerApi->insights;
     }
 
     public function orders(): Orders
     {
-        return $this->orders;
+        return $this->retailerApi->orders;
     }
 
     public function offers(): Offers
     {
-        return $this->offers;
+        return $this->retailerApi->offers;
     }
 
     public function status(): Status
     {
-        return $this->status;
+        return $this->sharedApi->status;
     }
 
     public function replenishments(): Replenishments
     {
-        return $this->replenishments;
+        return $this->retailerApi->replenishments;
     }
 
     public function returns(): Returns
     {
-        return $this->returns;
+        return $this->retailerApi->returns;
     }
 
     public function shipping(): Shipping
     {
-        return $this->shipping;
+        return $this->retailerApi->shipping;
     }
 
     public function shipments(): Shipments
     {
-        return $this->shipments;
+        return $this->retailerApi->shipments;
     }
 
     public function inventory(): Inventory
     {
-        return $this->inventory;
+        return $this->retailerApi->inventory;
     }
 
     public function invoices(): Invoices
     {
-        return $this->invoices;
+        return $this->retailerApi->invoices;
     }
 
     public function inbounds(): Inbounds
     {
-        return $this->inbounds;
+        return $this->retailerApi->inbounds;
     }
 
     public function promotions(): Promotions
     {
-        return $this->promotions;
+        return $this->retailerApi->promotions;
     }
 
     public function subscriptions(): Subscriptions
     {
-        return $this->subscriptions;
+        return $this->retailerApi->subscriptions;
     }
 
     public function transports(): Transports
     {
-        return $this->transports;
+        return $this->retailerApi->transports;
     }
 }
