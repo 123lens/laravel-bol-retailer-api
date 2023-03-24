@@ -18,15 +18,16 @@ use Budgetlens\BolRetailerApi\Endpoints\Shipments;
 use Budgetlens\BolRetailerApi\Endpoints\Shipping;
 use Budgetlens\BolRetailerApi\Endpoints\Subscriptions;
 use Budgetlens\BolRetailerApi\Endpoints\Transports;
+use Budgetlens\LaravelBolRetailerApi\WrapperClient;
 
 class BolRetailerApiTest extends TestCase
 {
     /** @test */
     public function itCanWorkWithAppInstance(): void
     {
-        $this->assertInstanceOf(Client::class, app('Bol'));
+        $this->assertInstanceOf(WrapperClient::class, app('Bol'));
 
-        $this->assertInstanceOf(Client::class, $this->app['Bol']);
+        $this->assertInstanceOf(WrapperClient::class, $this->app['Bol']);
     }
 
     /** @test */
