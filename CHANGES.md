@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [8.1.0] - 2023-03-29
+
+### Changes
+- Update `bol-retailer-api` version from `8.0.1` to `8.1.0`
+
 ## [8.0.1] - 2023-03-24
 
 ### Changes
