@@ -23,3 +23,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [8.0.0]: https://github.com/123lens/laravel-bol-retailer-api/releases/tag/v8.0.0
 [8.0.1]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.0.0...v8.0.1
+[8.1.0]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.0.1...v8.1.0
