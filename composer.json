@@ -1,6 +1,6 @@
 {
     "name": "budgetlens/laravel-bol-retailer-api",
-    "version": "8.1.1",
+    "version": "8.1.2",
     "description": "Laravel wrapper for Bol Retailer Api",
     "keywords": ["laravel", "bol", "api", "php"],
     "type": "package",
@@ -16,7 +16,7 @@
     "homepage": "https://github.com/123lens/laravel-bol-retailer-api",
     "require": {
         "php": "^7.4 || ^8.0",
-        "budgetlens/bol-retailer-api": "8.1.0"
+        "budgetlens/bol-retailer-api": "^8.1"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0 || ^5.0 || ^6.0",
