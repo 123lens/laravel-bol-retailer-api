@@ -1,6 +1,6 @@
 {
     "name": "budgetlens/laravel-bol-retailer-api",
-    "version": "8.1.0",
+    "version": "8.1.1",
     "description": "Laravel wrapper for Bol Retailer Api",
     "keywords": ["laravel", "bol", "api", "php"],
     "type": "package",
