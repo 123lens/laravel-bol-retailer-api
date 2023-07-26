@@ -16,7 +16,7 @@
     "homepage": "https://github.com/123lens/laravel-bol-retailer-api",
     "require": {
         "php": "^8.1",
-        "budgetlens/bol-retailer-api": "^8.1"
+        "budgetlens/bol-retailer-api": "^9.0"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0 || ^5.0 || ^6.0",
