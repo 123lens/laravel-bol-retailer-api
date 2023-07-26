@@ -6,7 +6,7 @@ use Budgetlens\BolRetailerApi\Client;
 use Budgetlens\BolRetailerApi\Contracts\Config;
 use Budgetlens\BolRetailerApi\Endpoints\Commissions;
 use Budgetlens\BolRetailerApi\Endpoints\Inbounds;
-use Budgetlens\BolRetailerApi\Endpoints\Insights;
+use Budgetlens\BolRetailerApi\Endpoints\RetailerAPI\Insights;
 use Budgetlens\BolRetailerApi\Endpoints\Inventory;
 use Budgetlens\BolRetailerApi\Endpoints\Invoices;
 use Budgetlens\BolRetailerApi\Endpoints\Offers;
