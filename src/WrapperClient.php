@@ -6,13 +6,15 @@ use Budgetlens\BolRetailerApi\Client;
 use Budgetlens\BolRetailerApi\Contracts\Config;
 use Budgetlens\BolRetailerApi\Endpoints\Commissions;
 use Budgetlens\BolRetailerApi\Endpoints\Inbounds;
-use Budgetlens\BolRetailerApi\Endpoints\Insights;
+use Budgetlens\BolRetailerApi\Endpoints\RetailerAPI\Insights;
 use Budgetlens\BolRetailerApi\Endpoints\Inventory;
 use Budgetlens\BolRetailerApi\Endpoints\Invoices;
 use Budgetlens\BolRetailerApi\Endpoints\Offers;
 use Budgetlens\BolRetailerApi\Endpoints\Orders;
 use Budgetlens\BolRetailerApi\Endpoints\Promotions;
 use Budgetlens\BolRetailerApi\Endpoints\Replenishments;
+use Budgetlens\BolRetailerApi\Endpoints\RetailerAPI\Products;
+use Budgetlens\BolRetailerApi\Endpoints\RetailerAPI\Retailers;
 use Budgetlens\BolRetailerApi\Endpoints\Returns;
 use Budgetlens\BolRetailerApi\Endpoints\SharedAPI\Status;
 use Budgetlens\BolRetailerApi\Endpoints\Shipments;
@@ -54,6 +56,11 @@ class WrapperClient
         return $this->retailerApi->offers;
     }
 
+    public function products(): Products
+    {
+        return $this->retailerApi->products;
+    }
+
     public function status(): Status
     {
         return $this->sharedApi->status;
@@ -62,6 +69,11 @@ class WrapperClient
     public function replenishments(): Replenishments
     {
         return $this->retailerApi->replenishments;
+    }
+
+    public function retailers(): Retailers
+    {
+        return $this->retailerApi->retailers;
     }
 
     public function returns(): Returns
