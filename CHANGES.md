@@ -7,10 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [9.0.0] - 2023-07-26
 
 ### Changes
-
 - Updated composer package dependencies
+- Updated unit tests
 
 ## [8.1.2] - 2023-03-29
 
@@ -41,3 +42,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [8.1.0]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.0.1...v8.1.0
 [8.1.1]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.1.0...v8.1.1
 [8.1.2]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.1.1...v8.1.2
+[9.0.0]: https://github.com/123lens/laravel-bol-retailer-api/compare/v8.1.2...v9.0.0
